@@ -1,0 +1,63 @@
+<head>
+<link rel="stylesheet" href="source/styling.css">
+
+<script>
+    var game = "ACCF"
+
+    window.onload = function(){
+            const date = Date().slice(16,18);
+            console.log(date);
+            checkSource(date);
+    }
+
+    function changeGame(newGame){
+        game = newGame;
+        checkSource();
+    }
+
+    function getHour(){
+        const hour = Date().slice(16,18);
+        if (hour > 12){
+            var returnVal = hour % 12;
+            return returnVal.toString() + " PM " + game;
+        }
+        else if (hour < 12){
+            return hour + "AM " + game;
+        }
+        else
+            return "12 PM " + game;
+    }
+
+    function checkSource(hour){
+        if (hour == null){
+            const date = Date().slice(16,18);
+            console.log(date);
+            checkSource(date);
+        }
+        else{
+            const element = document.getElementById("player");
+            hyperlink = "Music/" + game + "/Sunny/" + hour + ".mp3";
+            element.setAttribute("src", hyperlink);
+            document.getElementById("nowplaying").innerHTML = "Now Playing: " + getHour();
+        }
+    }
+
+</script>
+<header>
+    <p class="title">ANIMAL CROSSING RADIO</p>
+</header>
+
+</head>
+<body>
+    <audio id="player" autoplay="true" controls onended="checkSource();"></audio>
+    <br>
+    <div id="gamebuttons">
+        <button class="gamebutton" style="margin-right: 5px" onclick="changeGame('ACPG');">Population: Growing!</button>
+        <button class="gamebutton" style="font-size: 40pt; margin-right: 5px" onclick="changeGame('ACCF');">City Folk</button>
+        <button class="gamebutton" style="font-size: 38pt; margin-right: 5px" onclick="changeGame('ACNL');">New Leaf</button>
+        <button class="gamebutton" style="font-size: 28pt" onclick="changeGame('ACNH');">New Horizons</button>
+    </div>
+    <p id="nowplaying"></p>
+
+    <footer id="bottom-bar">A Heath Whitehead creation</footer>
+</body>

@@ -1,0 +1,63 @@
+@font-face {font-family: "handwriting"; src: url('handwriting.otf');}
+
+
+body{
+    background-image: linear-gradient(#926727, #9a722c);
+}
+
+.title{
+    font-family: 'handwriting';
+    text-shadow: 5px 5px 0px #000000;
+    border-color: #000000;
+    color: #ffc936;
+    text-align: center;
+    font-size: 75pt;
+    margin-top: 25px;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right:0;
+    text-align: center;
+    position: fixed;
+    font-family: 'handwriting';
+    font-size: 32
+}
+
+#gamebuttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gamebutton {
+    font-family: "handwriting";
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #483108;
+    border-radius: 20px;
+    background-color: #ddc36e;
+    height: 80px;
+    width: 200px;
+    font-size: 28pt;
+}
+
+#nowplaying{
+    font-family: "handwriting";
+    text-align: center;
+    font-family: 'handwriting';
+    text-shadow: 3px 3px 0px #000000;
+    border-color: #000000;
+    color: #ffc936;
+    text-align: center;
+    font-size: 32pt;
+}
+
+#player {
+    margin: 0 auto;
+    display: block;
+
+}

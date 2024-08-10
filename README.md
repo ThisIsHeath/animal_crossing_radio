@@ -12,3 +12,4 @@ HOW TO USE:
   download source files, click radio.html, and select a game! The music will automatically start upon selection.
   from there, all you have to do is sit back and enjoy! there are onboard volume and playback speed controls, as well as a pause button. You have full control of the audio output :)
   
+NONE OF THE MUSIC IS MINE! THIS IS ALL PROPERTY OF NINTENDO. I AM SIMPLY JUST A FAN OF THE SERIES WHO WANTED TO MAKE A COOL PROJECT BASED ON THEIR WORK.
